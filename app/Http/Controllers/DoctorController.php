@@ -21,7 +21,7 @@ class DoctorController extends Controller
     public function store(Request $request, Doctor $doctor)
     {
         $doctor->create($request->all());
-        return redirect()->route('doctor.index')->withStatus(__('Candidate successfully created.'));
+        return redirect()->route('doctor.index')->withStatus(__('Doctor successfully created.'));
     }
 
     public function show($id)
