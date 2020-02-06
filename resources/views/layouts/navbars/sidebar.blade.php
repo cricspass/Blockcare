@@ -54,8 +54,9 @@
                     <p>{{ __('DOCTORS') }}</p>
                 </a>
             </li>
-            <li @if ($pageSlug == 'maps') class="active " @endif>
-                <a href="{{ route('pages.maps') }}">
+            <li @if ($pageSlug == 'patient') class="active " @endif>
+{{--                <a href="{{ route('pages.maps') }}">--}}
+                <a href="/patient">
                     <i class="tim-icons icon-pin"></i>
                     <p>{{ __('PATIENTS') }}</p>
                 </a>
