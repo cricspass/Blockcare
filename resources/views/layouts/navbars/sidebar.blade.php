@@ -48,8 +48,8 @@
                     </ul>
                 </div>
             </li>
-            <li @if ($pageSlug == 'icons') class="active " @endif>
-                <a href="{{ route('pages.icons') }}">
+            <li @if ($pageSlug == 'doctor') class="active " @endif>
+                <a href="/doctor">
                     <i class="tim-icons icon-atom"></i>
                     <p>{{ __('DOCTORS') }}</p>
                 </a>

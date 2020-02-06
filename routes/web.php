@@ -1,3 +1,4 @@
+
 <?php
 
 /*
@@ -19,6 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 
+
 Route::group(['middleware' => 'auth'], function () {
 		Route::get('icons', ['as' => 'pages.icons', 'uses' => 'PageController@icons']);
 		Route::get('maps', ['as' => 'pages.maps', 'uses' => 'PageController@maps']);
@@ -35,4 +37,12 @@ Route::group(['middleware' => 'auth'], function () {
 	Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
 	Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
+
+Route::group(['middleware' => 'auth'], function () {
+	// Route::resource('user', 'UserController', ['except' => ['show']]);
+	Route::resource('doctor', 'DoctorController');
+	// Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+	// Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+
 
