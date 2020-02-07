@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Patient;
+use Blockavel\LaraBlockIo\LaraBlockIo;
+use BlockIo;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -10,6 +12,8 @@ class PatientController extends Controller
 
     public function index()
     {
+        $block = new LaraBlockIo();
+        ($block->getAddresses());
         $patients = Patient::all();
         return view('patients.patients_home', compact('patients'));
     }
