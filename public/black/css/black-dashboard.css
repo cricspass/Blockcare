@@ -14852,7 +14852,7 @@ table.tablesorter thead tr .headerSortDown {
 .sidebar,
 .off-canvas-sidebar {
   background: #212529;
-    background-image: url("../img/header.jpg");
+    background-image: url("../img/shutter1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   height: calc(100vh - 90px);
@@ -14879,6 +14879,7 @@ table.tablesorter thead tr .headerSortDown {
   z-index: 4;
   position: relative;
   overflow: auto;
+    background-color: rgba(0,0,0,0.8);
 }
 
 .sidebar .sidebar-wrapper .dropdown .dropdown-backdrop,
