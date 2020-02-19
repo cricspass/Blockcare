@@ -17,6 +17,8 @@ class CreatePatientsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->longText('private_key');
+            $table->longText('public_key');
             $table->timestamps();
         });
     }
