@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\KeysController;
+use Blockavel\LaraBlockIo\LaraBlockIo;
+use phpseclib\Crypt\RSA;
+
 class HomeController extends Controller
 {
     /**
@@ -21,6 +25,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('dashboard');
+        $block  = new LaraBlockIo();
+        $balance = $block->getAvailableBalance();
+        $network=$block->getNetwork();
+        $keypairs=KeysController::generate_keys();
+//        dd($keypairs);
+        return view('dashboard', ['balance' => $balance,'network' => $network,'keypairs' => $keypairs]);
     }
 }
