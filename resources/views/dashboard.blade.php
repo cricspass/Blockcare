@@ -41,7 +41,7 @@
                         <div class="col-sm-6 text-left">
                             <h5 class="card-category">Available Balance</h5>
                             <h2 class="card-title">
-{{--                                    {{$keypairs["privatekey"]}}--}}
+{{--                                    {{}}--}}
                             </h2>
                         </div>
                     </div>
