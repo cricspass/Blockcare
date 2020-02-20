@@ -24,10 +24,13 @@
                                     Name
                                 </th>
                                 <th>
-                                    City
+                                    Email
+                                </th>
+                                <th>
+                                    Hospital
                                 </th>
                                 <th class="text-center">
-                                    Salary
+                                    Action
                                 </th>
                             </tr>
                             </thead>
@@ -42,10 +45,32 @@
                                         {{$doctor->name}}
                                     </td>
                                     <td>
-
+                                        {{$doctor->email}}
                                     </td>
-                                    <td class="text-center">
-                                        $36,738
+                                    <td>
+                                        hbdhhjbj
+                                    </td>
+                                    <td class="td-actions text-center">
+                                        @if ($doctor->id)
+                                            {{--                                                    @if ($voter->id != auth()->id())--}}
+                                            <form action="{{ route('doctor.destroy', $doctor) }}" method="post">
+                                                @csrf
+                                                @method('delete')
+                                                <a rel="tooltip" class="btn btn-success btn-link" href="{{ route('doctor.edit', $doctor) }}" data-original-title="" title="">
+                                                    <i class="tim-icons icon-pencil"></i>
+                                                    <div class="ripple-container"></div>
+                                                </a>
+                                                <button type="button" class="btn btn-danger btn-link" data-original-title="" title="" onclick="confirm('{{ __("Are you sure you want to delete this doctor?") }}') ? this.parentElement.submit() : ''">
+                                                    <i class="tim-icons icon-trash-simple"></i>
+                                                    <div class="ripple-container"></div>
+                                                </button>
+                                            </form>
+                                        @else
+                                            <a rel="tooltip" class="btn btn-success btn-link" data-original-title="" title="">
+                                                <i class="material-icons">edit</i>
+                                                <div class="ripple-container"></div>
+                                            </a>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
