@@ -20,7 +20,9 @@ class DoctorController extends Controller
 
     public function store(Request $request, Doctor $doctor)
     {
-        $doctor->create($request->all());
+        $doctor->name= $request->name;
+        $doctor->email=$request->email;
+        $doctor->save();
         return redirect()->route('doctor.index')->withStatus(__('Doctor successfully created.'));
     }
 
@@ -29,18 +31,23 @@ class DoctorController extends Controller
         //
     }
 
-    public function edit($id)
+    public function edit(Doctor $doctor)
     {
-        //
+        return view('doctors.doctors_edit',compact('doctor'));
+
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request, Doctor $doctor)
     {
-        //
+        $doctor->name = $request->get('name');
+        $doctor->email = $request->get('email');
+        $doctor->update();
+        return redirect()->route('doctor.index')->withStatus(__('Doctor successfully created.'));
     }
 
-    public function destroy($id)
+    public function destroy(Doctor $doctor)
     {
-        //
+        $doctor->delete();
+        return redirect()->route('doctor.index')->withStatus(__('Doctor successfully deleted.'));
     }
 }
