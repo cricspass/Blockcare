@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Doctor;
+use App\Hospital;
 use Illuminate\Http\Request;
 
 class DoctorController extends Controller
@@ -10,18 +11,23 @@ class DoctorController extends Controller
     public function index()
     {
         $doctors = Doctor::all();
+//        $hospital=Hospital::find(1);
+//        $hospitalname=$hospital["name"];
         return view('doctors.doctors_home', compact('doctors'));
+
     }
 
     public function create()
     {
-        return view('doctors.doctors_create');
+        $hospitals = Hospital::all();
+        return view('doctors.doctors_create', compact('hospitals'));
     }
 
     public function store(Request $request, Doctor $doctor)
     {
         $doctor->name= $request->name;
         $doctor->email=$request->email;
+        $doctor->hospital_id=$request->id;
         $doctor->save();
         return redirect()->route('doctor.index')->withStatus(__('Doctor successfully created.'));
     }

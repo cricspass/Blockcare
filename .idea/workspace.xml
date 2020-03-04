@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1205435e-0240-400f-a0ff-e32c7c554cfb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/blockChain - Copy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blockChain - Copy.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Doctor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Doctor.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Hospital.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Hospital.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DoctorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DoctorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HospitalController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HospitalController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PatientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PatientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_02_05_122717_create_doctors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_02_21_122717_create_doctors_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/.rnd" beforeDir="false" afterPath="$PROJECT_DIR$/public/.rnd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/black/css/black-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/black/css/black-dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/doctors/doctors_create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/doctors_create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/doctors/doctors_home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/doctors/doctors_home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navbars/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navbars/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +42,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Blockcare" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -148,7 +159,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/hello/ipfs-blockchain-master" />
+    <property name="last_opened_file_path" value="F:/Bitcoin/MediLockWeb" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -159,7 +170,11 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\New folder (2)\BlockCare\Blockcare\app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\New folder (2)\BlockCare\Blockcare\resources\views\hospitals" />
       <recent name="G:\New folder (2)\BlockCare\Blockcare\resources\views\doctors" />
       <recent name="G:\New folder (2)\BlockCare\Blockcare\vendor\block_io-php\block_io-php\lib" />
     </key>
@@ -201,6 +216,12 @@
       <workItem from="1582043915790" duration="2915000" />
       <workItem from="1582087811292" duration="17199000" />
       <workItem from="1582189306811" duration="3365000" />
+      <workItem from="1582217110185" duration="3809000" />
+      <workItem from="1582693051595" duration="16222000" />
+      <workItem from="1582780770087" duration="38000" />
+      <workItem from="1582869276262" duration="10734000" />
+      <workItem from="1583125478625" duration="48000" />
+      <workItem from="1583294650693" duration="307000" />
     </task>
     <servers />
   </component>
@@ -212,14 +233,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="514" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1581077575013" />
-    <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581000797065">
+    <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582200200874">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1581000797065" />
-    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1582195192570">
+    <state x="499" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1582200200874" />
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1582780802569">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582195192570" />
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1582780802569" />
     <state x="507" y="248" key="NewPhpClassDialog" timestamp="1582092917965">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -228,10 +249,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1580987157538" />
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1582189401930">
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1583294666319">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1582189401930" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1583294666319" />
     <state x="449" y="73" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582029240391">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -244,9 +265,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="462" y="164" width="611" height="536" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1581001885861" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1582110650563">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1582869489574">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1582110650563" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1582869489574" />
   </component>
 </project>

@@ -21,8 +21,9 @@
 
                 <div class="collapse show" id="laravel-examples">
                     <ul class="nav pl-4">
-                        <li @if ($pageSlug == 'profile') class="active " @endif>
-                            <a href="{{ route('profile.edit')  }}">
+                        <li @if ($pageSlug == 'hospital') class="active " @endif>
+{{--                            <a href="{{ route('hospital.index')  }}">--}}
+                            <a href="/hospital">
                                 <i class="tim-icons icon-bank"></i>
                                 <p>{{ __('HOSPITALS') }}</p>
                             </a>
