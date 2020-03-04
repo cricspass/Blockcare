@@ -9,8 +9,6 @@ use BlockIo;
 use Illuminate\Http\Request;
 use BitcoinPHP\BitcoinECDSA\BitcoinECDSA;
 
-
-
 class PatientController extends Controller
 {
 
@@ -43,12 +41,12 @@ class PatientController extends Controller
         $bitcoinECDSA->setPrivateKey($private_key_to_hex);
         $pubKey = $bitcoinECDSA->getPubKey();
         $address = $bitcoinECDSA->getAddress();
-        $hashedData = $bitcoinECDSA->hash256('candidate 1');
+//        dd(($address));
+        $hashedData = $bitcoinECDSA->hash256('Hello');
         $signedHash = $bitcoinECDSA->signHash($hashedData);
-        $random = hash('sha256', hex2bin(hash('sha256', 'candidate 1')));
+        $random = hash('sha256', hex2bin(hash('sha256', 'Hello')));
         $verifiedhash = $bitcoinECDSA->checkDerSignature($pubKey, $signedHash, $random);
 //        dd($verifiedhash);
-        $address = $bitcoinECDSA->getUncompressedAddress();
 //        $patient->bitcoin_address = $request->bitcoin_address;
 //        $patient->network = $request->network;
 //        $patient->verify_token = sha1(uniqid($patient->private_key, true));

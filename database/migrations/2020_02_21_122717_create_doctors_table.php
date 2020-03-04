@@ -17,6 +17,8 @@ class CreateDoctorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('hospital_id');
+            $table->foreign('hospital_id')->references('id')->on('hospitals');
             $table->timestamps();
         });
     }

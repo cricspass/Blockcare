@@ -52,3 +52,10 @@ Route::group(['middleware' => 'auth'], function () {
         // Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
 });
 
+Route::group(['middleware' => 'auth'], function () {
+    // Route::resource('user', 'UserController', ['except' => ['show']]);
+    Route::resource('hospital', 'HospitalController');
+    // Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
+    // Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
+});
+

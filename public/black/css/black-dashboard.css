@@ -13988,6 +13988,10 @@ select,
 textarea {
   font-family: "Poppins", sans-serif;
 }
+option
+{
+    background: #1e1e2f;
+}
 
 .card h1,
 .card h2,
